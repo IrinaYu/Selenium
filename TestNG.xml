@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="classes" thread-count="2">
+
+    <parameter name="browserName" value="Chrome"></parameter>
+
+    <test name="Sample Test">
+        <classes>
+            <class name="EmptyTestClass1"/>
+            <class name="EmptyTestClass2"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="utils.TestNGListener"/>
+    </listeners>
+
+</suite>
